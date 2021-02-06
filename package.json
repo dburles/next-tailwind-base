@@ -1,0 +1,41 @@
+{
+  "name": "next-tailwind-base",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:unused-exports",
+    "test:prettier": "prettier -c .",
+    "test:eslint": "eslint .",
+    "test:unused-exports": "find-unused-exports --module-glob '**/*.js' --resolve-file-extensions js --resolve-index-files"
+  },
+  "engines": {
+    "node": "^12.0.0 || >= 13.7.0",
+    "npm": ">= 7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "next": "10.0.6",
+    "postcss": "^8.2.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.12.13",
+    "eslint": "^7.19.0",
+    "eslint-config-env": "^18.0.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^31.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  }
+}

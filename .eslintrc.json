@@ -1,0 +1,7 @@
+{
+  "extends": ["env"],
+  "rules": {
+    "jsdoc/require-jsdoc": "off",
+    "arrow-body-style": ["error", "always"]
+  }
+}
