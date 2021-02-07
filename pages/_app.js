@@ -1,3 +1,5 @@
+// ignore unused exports default
+
 import '../styles/globals.css';
 
 // eslint-disable-next-line react/prop-types
